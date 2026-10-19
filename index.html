@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EverAfter Planner helps couples organise their wedding budget, guests, tasks, venues and suppliers.">
+  <title>EverAfter Planner | Your Dream Wedding Starts Here</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="EverAfter Planner home">
+      <span class="brand-mark" aria-hidden="true">E<span>♥</span>A</span>
+      <span class="brand-name">EverAfter <em>Planner</em></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">☰ <span class="sr-only">Open navigation</span></button>
+    <nav id="primaryNav" class="primary-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#dashboard" class="nav-link">My Planner</a>
+      <a href="#venues" class="nav-link">Venues & Vendors</a>
+      <a href="#budget" class="nav-link">Budget</a>
+      <a href="#guests" class="nav-link">Guest List</a>
+      <a href="#contact" class="nav-link nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A little planning. A lifetime of memories.</p>
+        <h1>Your dream wedding<br><span>starts here.</span></h1>
+        <p class="hero-copy">One beautiful place to organise the details, celebrate your love, and enjoy the journey to “I do”.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Start planning <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#venues">Explore inspiration</a>
+        </div>
+        <div class="hero-note"><span class="note-heart">♥</span> Made for your forever.</div>
+      </div>
+      <div class="hero-card">
+        <span class="mini-label">YOUR BIG DAY</span>
+        <strong>20.12.2027</strong>
+        <span>Every detail, beautifully planned.</span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow">The planning, made personal</p>
+      <h2>Everything you need for<br><em>your once-in-a-lifetime day.</em></h2>
+      <p class="section-lead">From your first checklist to the final guest RSVP, keep the important things together and make room for the moments that matter.</p>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">♡</span><h3>Plan with purpose</h3><p>Keep track of every task, deadline and little detail without feeling overwhelmed.</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">✧</span><h3>Find your people</h3><p>Discover venues and wedding professionals who can help bring your vision to life.</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">⌁</span><h3>Stay on budget</h3><p>Track estimated costs and actual expenses so your plans stay realistic.</p></article>
+      </div>
+    </section>
+
+    <section class="planner-section" id="dashboard">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Your wedding, at a glance</p><h2>Welcome to your <em>planner.</em></h2><p class="muted">Sample wedding details — personalise the checklist and numbers as you go.</p></div>
+          <span class="pill"><span class="status-dot"></span> Planning in progress</span>
+        </div>
+        <div class="dashboard-grid">
+          <article class="dashboard-card date-card">
+            <div class="card-topline"><span>COUNTDOWN TO “I DO”</span><span aria-hidden="true">♡</span></div>
+            <p class="countdown-number" id="countdown">—</p><p class="countdown-caption">days until your wedding</p>
+            <label class="field-label" for="weddingDate">Wedding date</label>
+            <input type="date" id="weddingDate" value="2027-12-20">
+          </article>
+          <article class="dashboard-card stat-card"><span class="stat-icon" aria-hidden="true">✦</span><p class="stat-label">Total budget</p><strong id="dashboardBudget">R100,000</strong><a href="#budget">Manage budget →</a></article>
+          <article class="dashboard-card stat-card"><span class="stat-icon" aria-hidden="true">♡</span><p class="stat-label">Guests invited</p><strong id="dashboardGuests">4</strong><a href="#guests">Manage guest list →</a></article>
+          <article class="dashboard-card stat-card"><span class="stat-icon" aria-hidden="true">✓</span><p class="stat-label">Tasks completed</p><strong id="taskProgress">3 of 8</strong><div class="progress-track"><span id="taskProgressBar" style="width:37.5%"></span></div></article>
+        </div>
+        <div class="dashboard-lower">
+          <article class="panel checklist-panel">
+            <div class="panel-heading"><div><p class="eyebrow">One step at a time</p><h3>Wedding checklist</h3></div><span class="pill" id="checklistCount">3 / 8 done</span></div>
+            <p class="muted small">Tick a task when it is complete. Your progress updates automatically.</p>
+            <div class="checklist" id="checklist">
+              <label class="check-item"><input type="checkbox" checked><span class="custom-check"></span><span><strong>Choose your wedding style</strong><small>Decide on your theme and colours</small></span></label>
+              <label class="check-item"><input type="checkbox" checked><span class="custom-check"></span><span><strong>Set your initial budget</strong><small>Agree on your spending plan</small></span></label>
+              <label class="check-item"><input type="checkbox" checked><span class="custom-check"></span><span><strong>Draft the guest list</strong><small>Start with your closest people</small></span></label>
+              <label class="check-item"><input type="checkbox"><span class="custom-check"></span><span><strong>Book your venue</strong><small>Confirm the date and location</small></span></label>
+              <label class="check-item"><input type="checkbox"><span class="custom-check"></span><span><strong>Choose a photographer</strong><small>Find someone who fits your style</small></span></label>
+              <label class="check-item"><input type="checkbox"><span class="custom-check"></span><span><strong>Send invitations</strong><small>Include RSVP details</small></span></label>
+              <label class="check-item"><input type="checkbox"><span class="custom-check"></span><span><strong>Confirm catering</strong><small>Discuss menu and dietary needs</small></span></label>
+              <label class="check-item"><input type="checkbox"><span class="custom-check"></span><span><strong>Finalise the timeline</strong><small>Plan the flow of your day</small></span></label>
+            </div>
+          </article>
+          <article class="panel inspiration-panel">
+            <div class="inspiration-image" role="img" aria-label="Romantic wedding table with flowers and soft candlelight"></div>
+            <div class="inspiration-content"><p class="eyebrow">A note to remember</p><h3>It’s your love story.</h3><p>There is no one right way to plan a wedding. Choose what feels true to you, take it one step at a time, and enjoy the little moments along the way.</p><a href="#venues" class="text-link">Find your inspiration <span aria-hidden="true">→</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap vendors-section" id="venues">
+      <div class="section-heading">
+        <div><p class="eyebrow">Meet your wedding team</p><h2>Find your <em>perfect match.</em></h2><p class="section-lead left">Explore sample venues and suppliers to imagine the possibilities for your big day.</p></div>
+      </div>
+      <div class="vendor-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Search venues and vendors</span><input id="vendorSearch" type="search" placeholder="Search venues, photography, catering…"></label>
+        <label class="select-wrap"><span class="sr-only">Filter by category</span><select id="vendorCategory"><option value="all">All categories</option><option value="venue">Venues</option><option value="photo">Photography</option><option value="catering">Catering</option><option value="decor">Decor & flowers</option></select></label>
+      </div>
+      <p class="muted small">Demonstration listings and prices only; these are not live supplier offers.</p>
+      <div class="vendor-grid" id="vendorGrid">
+        <article class="vendor-card" data-category="venue" data-search="rosewood garden estate venue outdoor garden">
+          <div class="vendor-photo photo-one"><span class="vendor-tag">VENUE</span><button class="favorite-btn" type="button" aria-label="Add Rosewood Garden Estate to favourites" aria-pressed="false">♡</button></div>
+          <div class="vendor-info"><p class="vendor-location">Pretoria · Garden venue</p><h3>Rosewood Garden Estate</h3><p class="vendor-desc">A leafy outdoor setting for a romantic celebration.</p><div class="vendor-bottom"><strong>From R28,000</strong><button type="button" class="text-link details-btn" data-name="Rosewood Garden Estate" data-detail="A garden venue with outdoor ceremony space, reception facilities and photo-friendly surroundings. Sample starting price: R28,000.">View details →</button></div></div>
+        </article>
+        <article class="vendor-card" data-category="photo" data-search="golden hour photography photographer portraits">
+          <div class="vendor-photo photo-two"><span class="vendor-tag">PHOTOGRAPHY</span><button class="favorite-btn" type="button" aria-label="Add Golden Hour Photography to favourites" aria-pressed="false">♡</button></div>
+          <div class="vendor-info"><p class="vendor-location">Gauteng · Photography</p><h3>Golden Hour Photography</h3><p class="vendor-desc">Natural, heartfelt images of the moments you treasure.</p><div class="vendor-bottom"><strong>From R8,500</strong><button type="button" class="text-link details-btn" data-name="Golden Hour Photography" data-detail="Wedding photography coverage with portraits, ceremony moments and a digital photo gallery. Sample starting price: R8,500.">View details →</button></div></div>
+        </article>
+        <article class="vendor-card" data-category="catering" data-search="the ivory table catering food menu">
+          <div class="vendor-photo photo-three"><span class="vendor-tag">CATERING</span><button class="favorite-btn" type="button" aria-label="Add The Ivory Table to favourites" aria-pressed="false">♡</button></div>
+          <div class="vendor-info"><p class="vendor-location">Centurion · Catering</p><h3>The Ivory Table</h3><p class="vendor-desc">Thoughtful menus and beautifully presented dishes.</p><div class="vendor-bottom"><strong>From R350 / guest</strong><button type="button" class="text-link details-btn" data-name="The Ivory Table" data-detail="A sample catering service with menu planning, reception meals and options for dietary requirements. Sample price: R350 per guest.">View details →</button></div></div>
+        </article>
+        <article class="vendor-card" data-category="decor" data-search="petal and pearl decor flowers floral styling">
+          <div class="vendor-photo photo-four"><span class="vendor-tag">DECOR & FLOWERS</span><button class="favorite-btn" type="button" aria-label="Add Petal & Pearl to favourites" aria-pressed="false">♡</button></div>
+          <div class="vendor-info"><p class="vendor-location">Gauteng · Floral design</p><h3>Petal & Pearl</h3><p class="vendor-desc">Soft florals, thoughtful details and a cohesive look.</p><div class="vendor-bottom"><strong>From R6,000</strong><button type="button" class="text-link details-btn" data-name="Petal & Pearl" data-detail="Sample floral and decor styling, including table arrangements and ceremony details. Sample starting price: R6,000.">View details →</button></div></div>
+        </article>
+      </div>
+      <p id="noVendors" class="empty-state" hidden>No matches found. Try another search or category.</p>
+      <div class="favorites-note"><span aria-hidden="true">♡</span> Favourites saved in this demo: <strong id="favoriteCount">0</strong></div>
+    </section>
+
+    <section class="budget-section" id="budget">
+      <div class="section-wrap">
+        <div class="section-heading"><div><p class="eyebrow">Love your plans. Know your numbers.</p><h2>A budget that <em>works for you.</em></h2><p class="section-lead left">Update the amounts to see your estimated total and remaining balance change.</p></div></div>
+        <div class="budget-layout">
+          <div class="panel budget-table-panel">
+            <div class="budget-table-heading"><h3>Wedding expenses</h3><button type="button" id="resetBudget" class="subtle-button">Reset sample amounts</button></div>
+            <div class="expense-list" id="expenseList">
+              <label class="expense-row"><span><strong>Venue</strong><small>Reception and ceremony space</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="30000" aria-label="Venue cost"></span></label>
+              <label class="expense-row"><span><strong>Catering</strong><small>Food and drinks</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="25000" aria-label="Catering cost"></span></label>
+              <label class="expense-row"><span><strong>Photography</strong><small>Capturing your memories</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="10000" aria-label="Photography cost"></span></label>
+              <label class="expense-row"><span><strong>Attire</strong><small>Wedding outfits and alterations</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="15000" aria-label="Attire cost"></span></label>
+              <label class="expense-row"><span><strong>Decor & flowers</strong><small>Styling and floral arrangements</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="10000" aria-label="Decor and flowers cost"></span></label>
+              <label class="expense-row"><span><strong>Other expenses</strong><small>Transport, stationery and extras</small></span><span class="money-input"><span>R</span><input type="number" min="0" step="100" value="10000" aria-label="Other expenses cost"></span></label>
+            </div>
+            <label class="budget-limit">Your total budget <span class="money-input"><span>R</span><input type="number" id="budgetLimit" min="0" step="500" value="100000" aria-label="Total wedding budget"></span></label>
+          </div>
+          <aside class="budget-summary">
+            <p class="eyebrow">Your overview</p><h3>Every rand,<br>with a purpose.</h3>
+            <div class="summary-line"><span>Estimated expenses</span><strong id="expenseTotal">R100,000</strong></div>
+            <div class="summary-line"><span>Budget remaining</span><strong id="remainingTotal">R0</strong></div>
+            <div class="budget-progress"><span id="budgetProgressBar" style="width:100%"></span></div>
+            <p id="budgetMessage" class="budget-message" aria-live="polite">You have allocated your full sample budget.</p>
+            <p class="budget-footnote">This is a planning estimate. Confirm real prices directly with suppliers.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap guests-section" id="guests">
+      <div class="section-heading"><div><p class="eyebrow">The people who make it special</p><h2>Your <em>guest list.</em></h2><p class="section-lead left">Add sample guests and track who has confirmed their attendance.</p></div></div>
+      <div class="guest-layout">
+        <div class="panel guest-form-panel">
+          <h3>Add a guest</h3>
+          <form id="guestForm">
+            <label class="form-field">Guest name<input id="guestName" name="guestName" required maxlength="80" placeholder="e.g. Alex Morgan"></label>
+            <label class="form-field">Email (optional)<input id="guestEmail" name="guestEmail" type="email" placeholder="name@example.com"></label>
+            <label class="form-field">RSVP status<select id="guestStatus" name="guestStatus"><option value="Pending">Awaiting reply</option><option value="Accepted">Attending</option><option value="Declined">Unable to attend</option></select></label>
+            <button class="button button-primary full-button" type="submit">Add to guest list +</button>
+            <p class="form-feedback" id="guestFeedback" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="panel guest-list-panel">
+          <div class="guest-list-heading"><div><h3>Guest overview</h3><p class="muted small">Sample entries are provided to demonstrate the feature.</p></div><span class="pill" id="guestCountPill">4 guests</span></div>
+          <div class="guest-stats"><div><span id="attendingCount">2</span><small>Attending</small></div><div><span id="pendingCount">1</span><small>Awaiting reply</small></div><div><span id="declinedCount">1</span><small>Unable to attend</small></div></div>
+          <div class="table-scroll"><table class="guest-table"><thead><tr><th scope="col">Guest</th><th scope="col">RSVP</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody id="guestTableBody">
+            <tr><td><strong>Thando M.</strong><small>Family</small></td><td><select aria-label="Thando RSVP status" class="rsvp-select"><option>Pending</option><option selected>Accepted</option><option>Declined</option></select></td><td><button type="button" class="remove-guest" aria-label="Remove Thando M.">×</button></td></tr>
+            <tr><td><strong>Leila K.</strong><small>Friend</small></td><td><select aria-label="Leila RSVP status" class="rsvp-select"><option>Pending</option><option selected>Accepted</option><option>Declined</option></select></td><td><button type="button" class="remove-guest" aria-label="Remove Leila K.">×</button></td></tr>
+            <tr><td><strong>Sam R.</strong><small>Family</small></td><td><select aria-label="Sam RSVP status" class="rsvp-select"><option selected>Pending</option><option>Accepted</option><option>Declined</option></select></td><td><button type="button" class="remove-guest" aria-label="Remove Sam R.">×</button></td></tr>
+            <tr><td><strong>Jamie P.</strong><small>Friend</small></td><td><select aria-label="Jamie RSVP status" class="rsvp-select"><option>Pending</option><option>Accepted</option><option selected>Declined</option></select></td><td><button type="button" class="remove-guest" aria-label="Remove Jamie P.">×</button></td></tr>
+          </tbody></table></div>
+          <button type="button" id="shareGuestSummary" class="subtle-button">Create guest summary</button><p id="guestSummary" class="summary-output" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-decoration" aria-hidden="true">✧</div>
+      <div class="contact-inner"><p class="eyebrow">We’re here for the journey</p><h2>Let’s make room for<br><em>your happily ever after.</em></h2><p>Have a question or an idea? Send a message using the demo contact form below.</p>
+        <form class="contact-form" id="contactForm">
+          <div class="form-two-col"><label class="form-field">Your name<input required name="name" maxlength="80" placeholder="Your name"></label><label class="form-field">Email address<input required type="email" name="email" placeholder="you@example.com"></label></div>
+          <label class="form-field">How can we help?<select name="topic"><option>General question</option><option>Venue and vendor support</option><option>Budget planning</option><option>Accessibility feedback</option><option>Share a suggestion</option></select></label>
+          <label class="form-field">Your message<textarea required name="message" rows="4" maxlength="1000" placeholder="Tell us what you have in mind…"></textarea></label>
+          <button class="button button-primary" type="submit">Send message <span aria-hidden="true">↗</span></button><p id="contactFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+        <p class="demo-disclaimer">Prototype demo: forms do not send information to a real server. Do not enter private or sensitive information.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">E<span>♥</span>A</span><span class="brand-name">EverAfter <em>Planner</em></span></a>
+    <p>Plan with love. Celebrate your story.</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#dashboard">My Planner</a><a href="#venues">Explore</a><a href="#contact">Contact</a></div>
+    <small>© 2026 EverAfter Planner · Student prototype project</small>
+  </footer>
+
+  <dialog id="vendorDialog" class="vendor-dialog" aria-labelledby="dialogTitle">
+    <button type="button" class="dialog-close" id="dialogClose" aria-label="Close details">×</button>
+    <p class="eyebrow">A little more detail</p><h2 id="dialogTitle">Supplier details</h2><p id="dialogText"></p>
+    <button type="button" class="button button-primary" id="dialogOk">Lovely, thanks</button>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
